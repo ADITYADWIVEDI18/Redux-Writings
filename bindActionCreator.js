@@ -9,7 +9,7 @@
 
 const bindActionCreators = redux.bindActionCreators (In Starting)
 
-const actions = bindActionCreators({orderCake, restockCake},stock.dispatch);
+const actions = bindActionCreators({orderCake, restockCake},store.dispatch);
 actions.orderCake();
 actions.orderCake();
 actions.restockCake();
