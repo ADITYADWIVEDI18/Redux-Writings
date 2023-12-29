@@ -1,5 +1,7 @@
-// Here If we want to give free iceCream for purchasing each cake.
-// In iceCreamReducer we just add a new case but this type action type is Cake_Ordered nothing to do with Ice-creams
+// Here If we want to give free iceCream for purchasing each cake.            <----------------
+// In iceCreamReducer we just add a new case but this type action type is Cake_Ordered nothing to do with Ice-creams.          <--------------
+
+// IN RTK WE USE extraReducers for this purpose and for other stuff also. <----------------
 
 const redux = require('redux');
 // Redux library provides a method called a CreateStore which we used 
