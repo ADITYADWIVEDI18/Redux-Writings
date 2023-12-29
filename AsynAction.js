@@ -79,3 +79,47 @@ store.subscribe(() => {
   console.log(store.getState())
 })
 store.dispatch(fetchUsers())
+
+
+
+Output If we got error --->
+  
+  Node.js v18.16.0
+
+@@redux/INITl.g.l.u.m.q
+FETCH_USERS_REQUESTED
+{ loading: true, users: [], error: '' }
+FETCH_USERS_SUCCEEDED
+{
+  loading: false,
+  users: [
+    1, 2, 3, 4,  5,
+    6, 7, 8, 9, 10
+  ],
+  error: ''
+}
+PS C:\Users\ADITYA DWIVEDI\Desktop\sample_test> node AsynAction.js     
+@@redux/INITb.b.r.u.0.l
+FETCH_USERS_REQUESTED
+{ loading: true, users: [], error: '' }
+FETCH_USERS_FAILED
+{
+  loading: false,
+  users: [],
+  error: 'getaddrinfo ENOTFOUND jsonplaceholder.typicod.com'
+}
+
+Output If eveything goes right --->
+
+@@redux/INIT1.6.n.y.d.n
+FETCH_USERS_REQUESTED
+{ loading: true, users: [], error: '' }
+FETCH_USERS_SUCCEEDED
+{
+  loading: false,
+  users: [
+    1, 2, 3, 4,  5,
+    6, 7, 8, 9, 10
+  ],
+  error: ''
+}
